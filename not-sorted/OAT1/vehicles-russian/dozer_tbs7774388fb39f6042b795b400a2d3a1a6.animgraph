@@ -1,0 +1,303 @@
+{
+	"__type__": "egnine::animation::GraphDefinition::SerializedRepresentation",
+	"control_parameters": [
+		{
+			"name": "Close",
+			"node": 5
+		}
+	],
+	"nodes": [
+		{
+			"properties": [
+				{
+					"links": [
+						{
+							"property_path": "0/state",
+							"source_node": 1
+						},
+						{
+							"property_path": "1/state",
+							"source_node": 6
+						},
+						{
+							"property_path": "0/transitions/0/condition",
+							"source_node": 4
+						},
+						{
+							"property_path": "0/transitions/0/transition",
+							"source_node": 3
+						},
+						{
+							"property_path": "1/entry_condition",
+							"source_node": 8
+						},
+						{
+							"property_path": "1/transitions/0/condition",
+							"source_node": 5
+						},
+						{
+							"property_path": "1/transitions/0/transition",
+							"source_node": 9
+						}
+					],
+					"name": "states",
+					"value": {
+						"__type__": "eastl::fixed_vector<engine::animation::graph::StateMachineNode::StateInfo,4,,1,,eastl::allocator>",
+						"__value__": [
+							{
+								"transitions": [
+									{
+										"destination": 1
+									}
+								]
+							},
+							{
+								"transitions": [
+									{
+										"destination": 0
+									}
+								]
+							}
+						]
+					}
+				}
+			],
+			"type": "engine::animation::graph::StateMachineNode"
+		},
+		{
+			"properties": [
+				{
+					"links": [
+						{
+							"property_path": "",
+							"source_node": 2
+						}
+					],
+					"name": "child",
+					"value": null
+				},
+				{
+					"links": [],
+					"name": "reset_on_entry",
+					"value": {
+						"__type__": "bool",
+						"__value__": true
+					}
+				}
+			],
+			"type": "engine::animation::graph::StateNode"
+		},
+		{
+			"properties": [
+				{
+					"links": [],
+					"name": "speed",
+					"value": null
+				},
+				{
+					"links": [],
+					"name": "sample_options",
+					"value": {
+						"__type__": "engine::animation::graph::AnimationClipSampleOptions",
+						"__value__": "All"
+					}
+				},
+				{
+					"links": [],
+					"name": "clip",
+					"value": {
+						"__type__": "ResPtr_engine::io::SkeletalAnimationResourceManager",
+						"__value__": "/vehicles/russian/r02_t_72a/meshes/dozer_tbs_base_idle_close_fbx/scene/take 001.anim"
+					}
+				}
+			],
+			"type": "engine::animation::graph::AnimationLoopNode"
+		},
+		{
+			"properties": [
+				{
+					"links": [],
+					"name": "duration",
+					"value": {
+						"__type__": "float",
+						"__value__": 1.0
+					}
+				},
+				{
+					"links": [],
+					"name": "synchronized",
+					"value": {
+						"__type__": "bool",
+						"__value__": false
+					}
+				},
+				{
+					"links": [],
+					"name": "has_exit_time",
+					"value": {
+						"__type__": "bool",
+						"__value__": true
+					}
+				},
+				{
+					"links": [],
+					"name": "exit_time",
+					"value": {
+						"__type__": "float",
+						"__value__": 100.0
+					}
+				},
+				{
+					"links": [
+						{
+							"property_path": "",
+							"source_node": 6
+						}
+					],
+					"name": "destination",
+					"value": null
+				}
+			],
+			"type": "engine::animation::graph::TransitionNode"
+		},
+		{
+			"properties": [
+				{
+					"links": [
+						{
+							"property_path": "",
+							"source_node": 5
+						}
+					],
+					"name": "input",
+					"value": null
+				}
+			],
+			"type": "engine::animation::graph::NotNode"
+		},
+		{
+			"properties": [
+				{
+					"links": [],
+					"name": "value",
+					"value": {
+						"__type__": "bool",
+						"__value__": false
+					}
+				}
+			],
+			"type": "engine::animation::graph::BoolControlParameterNode"
+		},
+		{
+			"properties": [
+				{
+					"links": [
+						{
+							"property_path": "",
+							"source_node": 7
+						}
+					],
+					"name": "child",
+					"value": null
+				},
+				{
+					"links": [],
+					"name": "reset_on_entry",
+					"value": {
+						"__type__": "bool",
+						"__value__": true
+					}
+				}
+			],
+			"type": "engine::animation::graph::StateNode"
+		},
+		{
+			"properties": [
+				{
+					"links": [],
+					"name": "speed",
+					"value": null
+				},
+				{
+					"links": [],
+					"name": "sample_options",
+					"value": {
+						"__type__": "engine::animation::graph::AnimationClipSampleOptions",
+						"__value__": "All"
+					}
+				},
+				{
+					"links": [],
+					"name": "clip",
+					"value": {
+						"__type__": "ResPtr_engine::io::SkeletalAnimationResourceManager",
+						"__value__": "/vehicles/russian/r02_t_72a/meshes/dozer_tbs_base_idle_open_fbx/scene/take 001.anim"
+					}
+				}
+			],
+			"type": "engine::animation::graph::AnimationLoopNode"
+		},
+		{
+			"properties": [
+				{
+					"links": [
+						{
+							"property_path": "",
+							"source_node": 5
+						}
+					],
+					"name": "input",
+					"value": null
+				}
+			],
+			"type": "engine::animation::graph::NotNode"
+		},
+		{
+			"properties": [
+				{
+					"links": [],
+					"name": "duration",
+					"value": {
+						"__type__": "float",
+						"__value__": 1.0
+					}
+				},
+				{
+					"links": [],
+					"name": "synchronized",
+					"value": {
+						"__type__": "bool",
+						"__value__": false
+					}
+				},
+				{
+					"links": [],
+					"name": "has_exit_time",
+					"value": {
+						"__type__": "bool",
+						"__value__": true
+					}
+				},
+				{
+					"links": [],
+					"name": "exit_time",
+					"value": {
+						"__type__": "float",
+						"__value__": 100.0
+					}
+				},
+				{
+					"links": [
+						{
+							"property_path": "",
+							"source_node": 1
+						}
+					],
+					"name": "destination",
+					"value": null
+				}
+			],
+			"type": "engine::animation::graph::TransitionNode"
+		}
+	]
+}

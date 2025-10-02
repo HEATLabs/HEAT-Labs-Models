@@ -1,0 +1,106 @@
+{
+	"__type__": "engine::render::Material::Snapshot",
+	"base": "",
+	"effect": "/shaders/materials/tank_base_mat.fx",
+	"properties": [
+		{
+			"name": "g_alphaTestReference",
+			"value": {
+				"__type__": "float",
+				"__value__": 0.05000000074505806
+			}
+		},
+		{
+			"name": "g_crashUVTiling",
+			"value": {
+				"__type__": "math::vec4",
+				"w": 0.0,
+				"x": 3.0,
+				"y": 3.0,
+				"z": 0.0
+			}
+		},
+		{
+			"name": "g_emissiveColor",
+			"value": {
+				"__type__": "math::vec4",
+				"w": 1.0,
+				"x": 1.0,
+				"y": 0.23499999940395355,
+				"z": 0.0
+			}
+		},
+		{
+			"name": "g_enableEmissive",
+			"value": {
+				"__type__": "bool",
+				"__value__": false
+			}
+		},
+		{
+			"name": "g_useTiledCrash",
+			"value": {
+				"__type__": "bool",
+				"__value__": false
+			}
+		},
+		{
+			"name": "g_dirtTiling",
+			"value": {
+				"__type__": "float",
+				"__value__": 4.0
+			}
+		},
+		{
+			"name": "g_doubleSided",
+			"value": {
+				"__type__": "bool",
+				"__value__": false
+			}
+		},
+		{
+			"name": "g_enableAlphaTest",
+			"value": {
+				"__type__": "bool",
+				"__value__": false
+			}
+		},
+		{
+			"name": "g_objectKind",
+			"value": {
+				"__type__": "int32",
+				"__value__": 1
+			}
+		},
+		{
+			"name": "g_localWireframeMode",
+			"value": {
+				"__type__": "bool",
+				"__value__": false
+			}
+		}
+	],
+	"textures": [
+		{
+			"name": "g_crash",
+			"texture": ""
+		},
+		{
+			"name": "g_albedo",
+			"texture": "/vehicles/russian/r02_t_72a/materials/textures/side_screens_am.png"
+		},
+		{
+			"name": "g_normal",
+			"texture": "/vehicles/russian/r02_t_72a/materials/textures/side_screens_nm.png"
+		},
+		{
+			"name": "g_mr",
+			"texture": "/vehicles/russian/r02_t_72a/materials/textures/side_screens_rmm.png"
+		},
+		{
+			"name": "g_ao",
+			"texture": "/vehicles/russian/r02_t_72a/materials/textures/side_screens_ao.png"
+		}
+	],
+	"version": 6
+}
