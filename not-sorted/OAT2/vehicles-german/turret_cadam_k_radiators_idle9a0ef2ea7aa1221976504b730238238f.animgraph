@@ -1,0 +1,111 @@
+{
+	"__type__": "egnine::animation::GraphDefinition::SerializedRepresentation",
+	"control_parameters": [
+		{
+			"name": "Run",
+			"node": 1
+		},
+		{
+			"name": "Speed",
+			"node": 4
+		}
+	],
+	"nodes": [
+		{
+			"properties": [
+				{
+					"links": [
+						{
+							"property_path": "",
+							"source_node": 3
+						}
+					],
+					"name": "input_true",
+					"value": null
+				},
+				{
+					"links": [
+						{
+							"property_path": "",
+							"source_node": 2
+						}
+					],
+					"name": "input_false",
+					"value": null
+				},
+				{
+					"links": [
+						{
+							"property_path": "",
+							"source_node": 1
+						}
+					],
+					"name": "condition",
+					"value": null
+				}
+			],
+			"type": "engine::animation::graph::PoseSelectorNode"
+		},
+		{
+			"properties": [
+				{
+					"links": [],
+					"name": "value",
+					"value": {
+						"__type__": "bool",
+						"__value__": false
+					}
+				}
+			],
+			"type": "engine::animation::graph::BoolControlParameterNode"
+		},
+		{
+			"properties": [],
+			"type": "engine::animation::graph::ReferencePoseNode"
+		},
+		{
+			"properties": [
+				{
+					"links": [
+						{
+							"property_path": "",
+							"source_node": 4
+						}
+					],
+					"name": "speed",
+					"value": null
+				},
+				{
+					"links": [],
+					"name": "sample_options",
+					"value": {
+						"__type__": "engine::animation::graph::AnimationClipSampleOptions",
+						"__value__": "All"
+					}
+				},
+				{
+					"links": [],
+					"name": "clip",
+					"value": {
+						"__type__": "ResPtr_engine::io::SkeletalAnimationResourceManager",
+						"__value__": "/vehicles/german/g02_leopard2k/assault_fbx/meshes/turret_leopard_2k_pzt_keiler/upgrades/radiators_turret_cadam_k/turret_cadam_k_radiators_idle_fbx/animations/turret_cadam_k_radiators_idle.anim"
+					}
+				}
+			],
+			"type": "engine::animation::graph::AnimationLoopNode"
+		},
+		{
+			"properties": [
+				{
+					"links": [],
+					"name": "value",
+					"value": {
+						"__type__": "float",
+						"__value__": 1.0
+					}
+				}
+			],
+			"type": "engine::animation::graph::FloatControlParameterNode"
+		}
+	]
+}

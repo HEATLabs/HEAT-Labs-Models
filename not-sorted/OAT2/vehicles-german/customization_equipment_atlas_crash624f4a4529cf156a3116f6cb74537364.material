@@ -1,0 +1,1 @@
+{"__type__":"engine::render::Material::Snapshot","base":"/vehicles/german/g01_leopard_1_0_ser/sniper_fbx/materials/customization_equipment_atlas_crash.material","effect":"","properties":[],"textures":[{"name":"g_albedo","texture":"/vehicles/german/g01_leopard_1_0_ser/_skins/g01_leopard_1_a6_120_base_v2/materials/textures/atlas_customization_equipment_am_v2.png"}],"version":7}

@@ -1,0 +1,1 @@
+{"__type__":"engine::render::Material::Snapshot","base":"/vehicles/german/g01_leopard_1_0_ser/sniper_fbx/materials/tank_turret_01_gun_atlas_crash.material","effect":"","properties":[],"textures":[{"name":"g_albedo","texture":"/vehicles/german/g01_leopard_1_0_ser/_skins/g01_leopard_1_a6_120_base_v3/materials/textures/atlas_turret_gun_am_v3.png"}],"version":7}

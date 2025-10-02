@@ -1,0 +1,55 @@
+{
+	"__type__": "egnine::animation::GraphDefinition::SerializedRepresentation",
+	"control_parameters": [
+		{
+			"name": "Speed",
+			"node": 1
+		}
+	],
+	"nodes": [
+		{
+			"properties": [
+				{
+					"links": [
+						{
+							"property_path": "",
+							"source_node": 1
+						}
+					],
+					"name": "speed",
+					"value": null
+				},
+				{
+					"links": [],
+					"name": "sample_options",
+					"value": {
+						"__type__": "engine::animation::graph::AnimationClipSampleOptions",
+						"__value__": "All"
+					}
+				},
+				{
+					"links": [],
+					"name": "clip",
+					"value": {
+						"__type__": "ResPtr_engine::io::SkeletalAnimationResourceManager",
+						"__value__": "/vehicles/german/g02_leopard_2k_atgm/leopard_2k_atgm_fbx/meshes/custom_animation/anim/fan_03_fbx/animations/fan_03.anim"
+					}
+				}
+			],
+			"type": "engine::animation::graph::AnimationLoopNode"
+		},
+		{
+			"properties": [
+				{
+					"links": [],
+					"name": "value",
+					"value": {
+						"__type__": "float",
+						"__value__": 1.0
+					}
+				}
+			],
+			"type": "engine::animation::graph::FloatControlParameterNode"
+		}
+	]
+}
