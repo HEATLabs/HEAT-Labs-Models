@@ -1,0 +1,1 @@
+{"__type__":"engine::render::Material::Snapshot","base":"/vehicles/inside_modules/ammo_20mm/ammo_20mm_fbx/materials/ammo_20mm_mat.material","effect":"","properties":[],"textures":[{"name":"g_albedo","texture":"/vehicles/inside_modules/ammo_20mm/ammo_20mm_fbx/materials/textures/ammo_20mm_02_am.png"}],"version":7}

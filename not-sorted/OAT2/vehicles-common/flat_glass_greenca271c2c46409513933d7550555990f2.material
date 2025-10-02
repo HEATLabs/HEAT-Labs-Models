@@ -1,0 +1,1 @@
+{"__type__":"engine::render::Material::Snapshot","base":"/vehicles/universal_parts/flat_glass/flat_glass_coated.material","effect":"","properties":[],"textures":[{"name":"g_glassColor","texture":"/vehicles/inside_modules/armored_glass/armored_glass_fbx/materials/textures/flat_glass_green_am.png"}],"version":7}
