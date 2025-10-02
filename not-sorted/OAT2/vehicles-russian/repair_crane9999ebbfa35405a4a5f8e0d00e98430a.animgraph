@@ -1,0 +1,1331 @@
+{
+	"__type__": "egnine::animation::GraphDefinition::SerializedRepresentation",
+	"control_parameters": [
+		{
+			"name": "Control",
+			"node": 4
+		},
+		{
+			"name": "IKWeight",
+			"node": 24
+		},
+		{
+			"name": "PoleVector",
+			"node": 25
+		},
+		{
+			"name": "wTarget",
+			"node": 26
+		},
+		{
+			"name": "extractionProgress",
+			"node": 29
+		}
+	],
+	"nodes": [
+		{
+			"properties": [
+				{
+					"links": [
+						{
+							"property_path": "0/state",
+							"source_node": 1
+						},
+						{
+							"property_path": "1/state",
+							"source_node": 9
+						},
+						{
+							"property_path": "2/state",
+							"source_node": 22
+						},
+						{
+							"property_path": "3/state",
+							"source_node": 36
+						},
+						{
+							"property_path": "0/entry_condition",
+							"source_node": 3
+						},
+						{
+							"property_path": "0/transitions/0/condition",
+							"source_node": 7
+						},
+						{
+							"property_path": "0/transitions/0/transition",
+							"source_node": 6
+						},
+						{
+							"property_path": "1/entry_condition",
+							"source_node": 17
+						},
+						{
+							"property_path": "1/transitions/0/condition",
+							"source_node": 20
+						},
+						{
+							"property_path": "1/transitions/0/transition",
+							"source_node": 19
+						},
+						{
+							"property_path": "2/entry_condition",
+							"source_node": 31
+						},
+						{
+							"property_path": "2/transitions/0/condition",
+							"source_node": 34
+						},
+						{
+							"property_path": "2/transitions/0/transition",
+							"source_node": 33
+						},
+						{
+							"property_path": "3/entry_condition",
+							"source_node": 40
+						},
+						{
+							"property_path": "3/transitions/0/condition",
+							"source_node": 43
+						},
+						{
+							"property_path": "3/transitions/0/transition",
+							"source_node": 42
+						}
+					],
+					"name": "states",
+					"value": {
+						"__type__": "engine::animation::graph::StateMachineNode::StatesInfo",
+						"__value__": [
+							{
+								"transitions": [
+									{
+										"destination": 3
+									}
+								]
+							},
+							{
+								"transitions": [
+									{
+										"destination": 0
+									}
+								]
+							},
+							{
+								"transitions": [
+									{
+										"destination": 1
+									}
+								]
+							},
+							{
+								"transitions": [
+									{
+										"destination": 2
+									}
+								]
+							}
+						]
+					}
+				}
+			],
+			"type": "engine::animation::graph::StateMachineNode"
+		},
+		{
+			"properties": [
+				{
+					"links": [
+						{
+							"property_path": "",
+							"source_node": 2
+						}
+					],
+					"name": "child",
+					"value": null
+				},
+				{
+					"links": [],
+					"name": "reset_on_entry",
+					"value": {
+						"__type__": "bool",
+						"__value__": true
+					}
+				}
+			],
+			"type": "engine::animation::graph::StateNode"
+		},
+		{
+			"properties": [],
+			"type": "engine::animation::graph::ReferencePoseNode"
+		},
+		{
+			"properties": [
+				{
+					"links": [
+						{
+							"property_path": "",
+							"source_node": 5
+						}
+					],
+					"name": "a",
+					"value": null
+				},
+				{
+					"links": [
+						{
+							"property_path": "",
+							"source_node": 4
+						}
+					],
+					"name": "b",
+					"value": null
+				},
+				{
+					"links": [],
+					"name": "comparison",
+					"value": {
+						"__type__": "engine::animation::graph::FloatCompareNode::Comparison",
+						"__value__": "Equal"
+					}
+				}
+			],
+			"type": "engine::animation::graph::FloatCompareNode"
+		},
+		{
+			"properties": [
+				{
+					"links": [],
+					"name": "value",
+					"value": {
+						"__type__": "float",
+						"__value__": 0.0
+					}
+				}
+			],
+			"type": "engine::animation::graph::FloatControlParameterNode"
+		},
+		{
+			"properties": [
+				{
+					"links": [],
+					"name": "value",
+					"value": {
+						"__type__": "float",
+						"__value__": 0.0
+					}
+				}
+			],
+			"type": "engine::animation::graph::ConstFloatNode"
+		},
+		{
+			"properties": [
+				{
+					"links": [],
+					"name": "duration",
+					"value": {
+						"__type__": "float",
+						"__value__": 0.4
+					}
+				},
+				{
+					"links": [],
+					"name": "synchronized",
+					"value": {
+						"__type__": "bool",
+						"__value__": false
+					}
+				},
+				{
+					"links": [],
+					"name": "has_exit_time",
+					"value": {
+						"__type__": "bool",
+						"__value__": false
+					}
+				},
+				{
+					"links": [],
+					"name": "exit_time",
+					"value": {
+						"__type__": "float",
+						"__value__": 100.0
+					}
+				},
+				{
+					"links": [
+						{
+							"property_path": "",
+							"source_node": 36
+						}
+					],
+					"name": "destination",
+					"value": null
+				}
+			],
+			"type": "engine::animation::graph::TransitionNode"
+		},
+		{
+			"properties": [
+				{
+					"links": [
+						{
+							"property_path": "",
+							"source_node": 4
+						}
+					],
+					"name": "a",
+					"value": null
+				},
+				{
+					"links": [
+						{
+							"property_path": "",
+							"source_node": 8
+						}
+					],
+					"name": "b",
+					"value": null
+				},
+				{
+					"links": [],
+					"name": "comparison",
+					"value": {
+						"__type__": "engine::animation::graph::FloatCompareNode::Comparison",
+						"__value__": "Equal"
+					}
+				}
+			],
+			"type": "engine::animation::graph::FloatCompareNode"
+		},
+		{
+			"properties": [
+				{
+					"links": [],
+					"name": "value",
+					"value": {
+						"__type__": "float",
+						"__value__": 1.0
+					}
+				}
+			],
+			"type": "engine::animation::graph::ConstFloatNode"
+		},
+		{
+			"properties": [
+				{
+					"links": [
+						{
+							"property_path": "",
+							"source_node": 10
+						}
+					],
+					"name": "child",
+					"value": null
+				},
+				{
+					"links": [],
+					"name": "reset_on_entry",
+					"value": {
+						"__type__": "bool",
+						"__value__": true
+					}
+				}
+			],
+			"type": "engine::animation::graph::StateNode"
+		},
+		{
+			"properties": [
+				{
+					"links": [
+						{
+							"property_path": "",
+							"source_node": 11
+						}
+					],
+					"name": "position",
+					"value": null
+				},
+				{
+					"links": [],
+					"name": "time",
+					"value": {
+						"__type__": "float",
+						"__value__": 0.0
+					}
+				},
+				{
+					"links": [],
+					"name": "sample_options",
+					"value": {
+						"__type__": "engine::animation::graph::AnimationClipSampleOptions",
+						"__value__": "All"
+					}
+				},
+				{
+					"links": [],
+					"name": "clip",
+					"value": {
+						"__type__": "ResPtr_engine::io::SkeletalAnimationResourceManager",
+						"__value__": "/vehicles/russian/r10_bat_4m_eneysp/r10_bat_4m_eneysp_fbx/meshes/animation/repair_crane_fbx/animations/repair_crane.anim"
+					}
+				}
+			],
+			"type": "engine::animation::graph::AnimationPoseNode"
+		},
+		{
+			"properties": [
+				{
+					"links": [
+						{
+							"property_path": "",
+							"source_node": 13
+						}
+					],
+					"name": "a",
+					"value": null
+				},
+				{
+					"links": [
+						{
+							"property_path": "",
+							"source_node": 12
+						}
+					],
+					"name": "b",
+					"value": null
+				}
+			],
+			"type": "engine::animation::graph::FloatAddNode"
+		},
+		{
+			"properties": [
+				{
+					"links": [],
+					"name": "value",
+					"value": {
+						"__type__": "float",
+						"__value__": 0.6
+					}
+				}
+			],
+			"type": "engine::animation::graph::ConstFloatNode"
+		},
+		{
+			"properties": [
+				{
+					"links": [
+						{
+							"property_path": "",
+							"source_node": 16
+						}
+					],
+					"name": "a",
+					"value": null
+				},
+				{
+					"links": [
+						{
+							"property_path": "",
+							"source_node": 14
+						}
+					],
+					"name": "b",
+					"value": null
+				}
+			],
+			"type": "engine::animation::graph::FloatMulNode"
+		},
+		{
+			"properties": [
+				{
+					"links": [
+						{
+							"property_path": "",
+							"source_node": 15
+						}
+					],
+					"name": "input",
+					"value": null
+				},
+				{
+					"links": [],
+					"name": "in_range",
+					"value": {
+						"__type__": "engine::animation::Graph::INode::FloatRange",
+						"begin": 0.0,
+						"end": 2.0
+					}
+				},
+				{
+					"links": [],
+					"name": "out_range",
+					"value": {
+						"__type__": "engine::animation::Graph::INode::FloatRange",
+						"begin": 0.0,
+						"end": 0.6
+					}
+				}
+			],
+			"type": "engine::animation::graph::FloatRemapNode"
+		},
+		{
+			"properties": [
+				{
+					"links": [],
+					"name": "speed_override",
+					"value": null
+				},
+				{
+					"links": [],
+					"name": "loop_override",
+					"value": null
+				},
+				{
+					"links": [],
+					"name": "loop",
+					"value": {
+						"__type__": "float",
+						"__value__": 0.0
+					}
+				}
+			],
+			"type": "engine::animation::graph::TimerNode"
+		},
+		{
+			"properties": [
+				{
+					"links": [],
+					"name": "value",
+					"value": {
+						"__type__": "float",
+						"__value__": -1.0
+					}
+				}
+			],
+			"type": "engine::animation::graph::ConstFloatNode"
+		},
+		{
+			"properties": [
+				{
+					"links": [
+						{
+							"property_path": "",
+							"source_node": 4
+						}
+					],
+					"name": "a",
+					"value": null
+				},
+				{
+					"links": [
+						{
+							"property_path": "",
+							"source_node": 18
+						}
+					],
+					"name": "b",
+					"value": null
+				},
+				{
+					"links": [],
+					"name": "comparison",
+					"value": {
+						"__type__": "engine::animation::graph::FloatCompareNode::Comparison",
+						"__value__": "Equal"
+					}
+				}
+			],
+			"type": "engine::animation::graph::FloatCompareNode"
+		},
+		{
+			"properties": [
+				{
+					"links": [],
+					"name": "value",
+					"value": {
+						"__type__": "float",
+						"__value__": 3.0
+					}
+				}
+			],
+			"type": "engine::animation::graph::ConstFloatNode"
+		},
+		{
+			"properties": [
+				{
+					"links": [],
+					"name": "duration",
+					"value": {
+						"__type__": "float",
+						"__value__": 0.0
+					}
+				},
+				{
+					"links": [],
+					"name": "synchronized",
+					"value": {
+						"__type__": "bool",
+						"__value__": false
+					}
+				},
+				{
+					"links": [],
+					"name": "has_exit_time",
+					"value": {
+						"__type__": "bool",
+						"__value__": false
+					}
+				},
+				{
+					"links": [],
+					"name": "exit_time",
+					"value": {
+						"__type__": "float",
+						"__value__": 100.0
+					}
+				},
+				{
+					"links": [
+						{
+							"property_path": "",
+							"source_node": 1
+						}
+					],
+					"name": "destination",
+					"value": null
+				}
+			],
+			"type": "engine::animation::graph::TransitionNode"
+		},
+		{
+			"properties": [
+				{
+					"links": [
+						{
+							"property_path": "",
+							"source_node": 21
+						}
+					],
+					"name": "a",
+					"value": null
+				},
+				{
+					"links": [
+						{
+							"property_path": "",
+							"source_node": 4
+						}
+					],
+					"name": "b",
+					"value": null
+				},
+				{
+					"links": [],
+					"name": "comparison",
+					"value": {
+						"__type__": "engine::animation::graph::FloatCompareNode::Comparison",
+						"__value__": "Equal"
+					}
+				}
+			],
+			"type": "engine::animation::graph::FloatCompareNode"
+		},
+		{
+			"properties": [
+				{
+					"links": [],
+					"name": "value",
+					"value": {
+						"__type__": "float",
+						"__value__": 0.0
+					}
+				}
+			],
+			"type": "engine::animation::graph::ConstFloatNode"
+		},
+		{
+			"properties": [
+				{
+					"links": [
+						{
+							"property_path": "",
+							"source_node": 23
+						}
+					],
+					"name": "child",
+					"value": null
+				},
+				{
+					"links": [],
+					"name": "reset_on_entry",
+					"value": {
+						"__type__": "bool",
+						"__value__": true
+					}
+				}
+			],
+			"type": "engine::animation::graph::StateNode"
+		},
+		{
+			"properties": [
+				{
+					"links": [],
+					"name": "root_bone",
+					"value": {
+						"__type__": "engine::InternedString",
+						"__value__": "arm"
+					}
+				},
+				{
+					"links": [],
+					"name": "mid_bone",
+					"value": {
+						"__type__": "engine::InternedString",
+						"__value__": "telescopic_arm_01"
+					}
+				},
+				{
+					"links": [],
+					"name": "end_bone",
+					"value": {
+						"__type__": "engine::InternedString",
+						"__value__": "telescopic_arm_03"
+					}
+				},
+				{
+					"links": [
+						{
+							"property_path": "",
+							"source_node": 27
+						}
+					],
+					"name": "input",
+					"value": null
+				},
+				{
+					"links": [
+						{
+							"property_path": "",
+							"source_node": 26
+						}
+					],
+					"name": "target",
+					"value": null
+				},
+				{
+					"links": [
+						{
+							"property_path": "",
+							"source_node": 25
+						}
+					],
+					"name": "pole_vector",
+					"value": null
+				},
+				{
+					"links": [],
+					"name": "pole_vector_space",
+					"value": {
+						"__type__": "engine::animation::Pose::Space",
+						"__value__": "Character"
+					}
+				},
+				{
+					"links": [
+						{
+							"property_path": "",
+							"source_node": 24
+						}
+					],
+					"name": "weight",
+					"value": null
+				},
+				{
+					"links": [],
+					"name": "override_target_rot",
+					"value": {
+						"__type__": "bool",
+						"__value__": true
+					}
+				},
+				{
+					"links": [],
+					"name": "allow_stretching",
+					"value": {
+						"__type__": "bool",
+						"__value__": false
+					}
+				},
+				{
+					"links": [],
+					"name": "max_stretch_scale",
+					"value": {
+						"__type__": "float",
+						"__value__": 1.0
+					}
+				},
+				{
+					"links": [],
+					"name": "enable_angle_limit",
+					"value": {
+						"__type__": "bool",
+						"__value__": true
+					}
+				},
+				{
+					"links": [],
+					"name": "min_angle_limit_cos",
+					"value": {
+						"__type__": "float",
+						"__value__": 1.0
+					}
+				},
+				{
+					"links": [],
+					"name": "max_angle_limit_cos",
+					"value": {
+						"__type__": "float",
+						"__value__": -0.76604444
+					}
+				}
+			],
+			"type": "engine::animation::graph::TwoBoneIKNode"
+		},
+		{
+			"properties": [
+				{
+					"links": [],
+					"name": "value",
+					"value": {
+						"__type__": "float",
+						"__value__": 0.0
+					}
+				}
+			],
+			"type": "engine::animation::graph::FloatControlParameterNode"
+		},
+		{
+			"properties": [
+				{
+					"links": [],
+					"name": "value",
+					"value": {
+						"__type__": "math::vec3",
+						"x": 0.0,
+						"y": 1.0,
+						"z": 0.0
+					}
+				}
+			],
+			"type": "engine::animation::graph::Float3ControlParameterNode"
+		},
+		{
+			"properties": [
+				{
+					"links": [],
+					"name": "value",
+					"value": {
+						"__type__": "engine::animation::Transform",
+						"pos": {
+							"x": 0.0,
+							"y": 3.0,
+							"z": 2.0
+						},
+						"rotation": {
+							"x": -0.0,
+							"y": 0.0,
+							"z": 0.0
+						},
+						"scale": 1.0
+					}
+				}
+			],
+			"type": "engine::animation::graph::TransformControlParameterNode"
+		},
+		{
+			"properties": [
+				{
+					"links": [
+						{
+							"property_path": "",
+							"source_node": 28
+						}
+					],
+					"name": "position",
+					"value": null
+				},
+				{
+					"links": [],
+					"name": "time",
+					"value": {
+						"__type__": "float",
+						"__value__": 0.0
+					}
+				},
+				{
+					"links": [],
+					"name": "sample_options",
+					"value": {
+						"__type__": "engine::animation::graph::AnimationClipSampleOptions",
+						"__value__": "All"
+					}
+				},
+				{
+					"links": [],
+					"name": "clip",
+					"value": {
+						"__type__": "ResPtr_engine::io::SkeletalAnimationResourceManager",
+						"__value__": "/vehicles/russian/r10_bat_4m_eneysp/r10_bat_4m_eneysp_fbx/meshes/animation/repair_crane_fbx/animations/repair_crane.anim"
+					}
+				}
+			],
+			"type": "engine::animation::graph::AnimationPoseNode"
+		},
+		{
+			"properties": [
+				{
+					"links": [
+						{
+							"property_path": "",
+							"source_node": 30
+						}
+					],
+					"name": "a",
+					"value": null
+				},
+				{
+					"links": [
+						{
+							"property_path": "",
+							"source_node": 29
+						}
+					],
+					"name": "b",
+					"value": null
+				}
+			],
+			"type": "engine::animation::graph::FloatAddNode"
+		},
+		{
+			"properties": [
+				{
+					"links": [],
+					"name": "value",
+					"value": {
+						"__type__": "float",
+						"__value__": 0.0
+					}
+				}
+			],
+			"type": "engine::animation::graph::FloatControlParameterNode"
+		},
+		{
+			"properties": [
+				{
+					"links": [],
+					"name": "value",
+					"value": {
+						"__type__": "float",
+						"__value__": 0.6
+					}
+				}
+			],
+			"type": "engine::animation::graph::ConstFloatNode"
+		},
+		{
+			"properties": [
+				{
+					"links": [
+						{
+							"property_path": "",
+							"source_node": 4
+						}
+					],
+					"name": "a",
+					"value": null
+				},
+				{
+					"links": [
+						{
+							"property_path": "",
+							"source_node": 32
+						}
+					],
+					"name": "b",
+					"value": null
+				},
+				{
+					"links": [],
+					"name": "comparison",
+					"value": {
+						"__type__": "engine::animation::graph::FloatCompareNode::Comparison",
+						"__value__": "Equal"
+					}
+				}
+			],
+			"type": "engine::animation::graph::FloatCompareNode"
+		},
+		{
+			"properties": [
+				{
+					"links": [],
+					"name": "value",
+					"value": {
+						"__type__": "float",
+						"__value__": 2.0
+					}
+				}
+			],
+			"type": "engine::animation::graph::ConstFloatNode"
+		},
+		{
+			"properties": [
+				{
+					"links": [],
+					"name": "duration",
+					"value": {
+						"__type__": "float",
+						"__value__": 0.5
+					}
+				},
+				{
+					"links": [],
+					"name": "synchronized",
+					"value": {
+						"__type__": "bool",
+						"__value__": false
+					}
+				},
+				{
+					"links": [],
+					"name": "has_exit_time",
+					"value": {
+						"__type__": "bool",
+						"__value__": false
+					}
+				},
+				{
+					"links": [],
+					"name": "exit_time",
+					"value": {
+						"__type__": "float",
+						"__value__": 50.0
+					}
+				},
+				{
+					"links": [
+						{
+							"property_path": "",
+							"source_node": 9
+						}
+					],
+					"name": "destination",
+					"value": null
+				}
+			],
+			"type": "engine::animation::graph::TransitionNode"
+		},
+		{
+			"properties": [
+				{
+					"links": [
+						{
+							"property_path": "",
+							"source_node": 35
+						}
+					],
+					"name": "a",
+					"value": null
+				},
+				{
+					"links": [
+						{
+							"property_path": "",
+							"source_node": 4
+						}
+					],
+					"name": "b",
+					"value": null
+				},
+				{
+					"links": [],
+					"name": "comparison",
+					"value": {
+						"__type__": "engine::animation::graph::FloatCompareNode::Comparison",
+						"__value__": "Equal"
+					}
+				}
+			],
+			"type": "engine::animation::graph::FloatCompareNode"
+		},
+		{
+			"properties": [
+				{
+					"links": [],
+					"name": "value",
+					"value": {
+						"__type__": "float",
+						"__value__": 3.0
+					}
+				}
+			],
+			"type": "engine::animation::graph::ConstFloatNode"
+		},
+		{
+			"properties": [
+				{
+					"links": [
+						{
+							"property_path": "",
+							"source_node": 37
+						}
+					],
+					"name": "child",
+					"value": null
+				},
+				{
+					"links": [],
+					"name": "reset_on_entry",
+					"value": {
+						"__type__": "bool",
+						"__value__": true
+					}
+				}
+			],
+			"type": "engine::animation::graph::StateNode"
+		},
+		{
+			"properties": [
+				{
+					"links": [
+						{
+							"property_path": "",
+							"source_node": 38
+						}
+					],
+					"name": "position",
+					"value": null
+				},
+				{
+					"links": [],
+					"name": "time",
+					"value": {
+						"__type__": "float",
+						"__value__": 0.0
+					}
+				},
+				{
+					"links": [],
+					"name": "sample_options",
+					"value": {
+						"__type__": "engine::animation::graph::AnimationClipSampleOptions",
+						"__value__": "All"
+					}
+				},
+				{
+					"links": [],
+					"name": "clip",
+					"value": {
+						"__type__": "ResPtr_engine::io::SkeletalAnimationResourceManager",
+						"__value__": "/vehicles/russian/r10_bat_4m_eneysp/r10_bat_4m_eneysp_fbx/meshes/animation/repair_crane_fbx/animations/repair_crane.anim"
+					}
+				}
+			],
+			"type": "engine::animation::graph::AnimationPoseNode"
+		},
+		{
+			"properties": [
+				{
+					"links": [
+						{
+							"property_path": "",
+							"source_node": 39
+						}
+					],
+					"name": "input",
+					"value": null
+				},
+				{
+					"links": [],
+					"name": "in_range",
+					"value": {
+						"__type__": "engine::animation::Graph::INode::FloatRange",
+						"begin": 0.0,
+						"end": 2.0
+					}
+				},
+				{
+					"links": [],
+					"name": "out_range",
+					"value": {
+						"__type__": "engine::animation::Graph::INode::FloatRange",
+						"begin": 0.0,
+						"end": 0.6
+					}
+				}
+			],
+			"type": "engine::animation::graph::FloatRemapNode"
+		},
+		{
+			"properties": [
+				{
+					"links": [],
+					"name": "speed_override",
+					"value": null
+				},
+				{
+					"links": [],
+					"name": "loop_override",
+					"value": null
+				},
+				{
+					"links": [],
+					"name": "loop",
+					"value": {
+						"__type__": "float",
+						"__value__": 0.0
+					}
+				}
+			],
+			"type": "engine::animation::graph::TimerNode"
+		},
+		{
+			"properties": [
+				{
+					"links": [
+						{
+							"property_path": "",
+							"source_node": 41
+						}
+					],
+					"name": "a",
+					"value": null
+				},
+				{
+					"links": [
+						{
+							"property_path": "",
+							"source_node": 4
+						}
+					],
+					"name": "b",
+					"value": null
+				},
+				{
+					"links": [],
+					"name": "comparison",
+					"value": {
+						"__type__": "engine::animation::graph::FloatCompareNode::Comparison",
+						"__value__": "Equal"
+					}
+				}
+			],
+			"type": "engine::animation::graph::FloatCompareNode"
+		},
+		{
+			"properties": [
+				{
+					"links": [],
+					"name": "value",
+					"value": {
+						"__type__": "float",
+						"__value__": 1.0
+					}
+				}
+			],
+			"type": "engine::animation::graph::ConstFloatNode"
+		},
+		{
+			"properties": [
+				{
+					"links": [],
+					"name": "duration",
+					"value": {
+						"__type__": "float",
+						"__value__": 0.0
+					}
+				},
+				{
+					"links": [],
+					"name": "synchronized",
+					"value": {
+						"__type__": "bool",
+						"__value__": false
+					}
+				},
+				{
+					"links": [],
+					"name": "has_exit_time",
+					"value": {
+						"__type__": "bool",
+						"__value__": false
+					}
+				},
+				{
+					"links": [],
+					"name": "exit_time",
+					"value": {
+						"__type__": "float",
+						"__value__": 100.0
+					}
+				},
+				{
+					"links": [
+						{
+							"property_path": "",
+							"source_node": 22
+						}
+					],
+					"name": "destination",
+					"value": null
+				}
+			],
+			"type": "engine::animation::graph::TransitionNode"
+		},
+		{
+			"properties": [
+				{
+					"links": [
+						{
+							"property_path": "",
+							"source_node": 44
+						}
+					],
+					"name": "a",
+					"value": null
+				},
+				{
+					"links": [
+						{
+							"property_path": "",
+							"source_node": 4
+						}
+					],
+					"name": "b",
+					"value": null
+				},
+				{
+					"links": [],
+					"name": "comparison",
+					"value": {
+						"__type__": "engine::animation::graph::FloatCompareNode::Comparison",
+						"__value__": "Equal"
+					}
+				}
+			],
+			"type": "engine::animation::graph::FloatCompareNode"
+		},
+		{
+			"properties": [
+				{
+					"links": [],
+					"name": "value",
+					"value": {
+						"__type__": "float",
+						"__value__": 2.0
+					}
+				}
+			],
+			"type": "engine::animation::graph::ConstFloatNode"
+		}
+	]
+}

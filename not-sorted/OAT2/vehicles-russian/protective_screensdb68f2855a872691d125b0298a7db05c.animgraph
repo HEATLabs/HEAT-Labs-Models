@@ -1,0 +1,63 @@
+{
+	"__type__": "egnine::animation::GraphDefinition::SerializedRepresentation",
+	"control_parameters": [
+		{
+			"name": "Progress",
+			"node": 1
+		}
+	],
+	"nodes": [
+		{
+			"properties": [
+				{
+					"links": [
+						{
+							"property_path": "",
+							"source_node": 1
+						}
+					],
+					"name": "position",
+					"value": null
+				},
+				{
+					"links": [],
+					"name": "time",
+					"value": {
+						"__type__": "float",
+						"__value__": 0.0
+					}
+				},
+				{
+					"links": [],
+					"name": "sample_options",
+					"value": {
+						"__type__": "engine::animation::graph::AnimationClipSampleOptions",
+						"__value__": "All"
+					}
+				},
+				{
+					"links": [],
+					"name": "clip",
+					"value": {
+						"__type__": "ResPtr_engine::io::SkeletalAnimationResourceManager",
+						"__value__": "/vehicles/russian/r10_bat_4m_eneysp/r10_bat_4m_eneysp_fbx/meshes/animation/protective_screens_fbx/animations/protective_screens.anim"
+					}
+				}
+			],
+			"type": "engine::animation::graph::AnimationPoseNode"
+		},
+		{
+			"properties": [
+				{
+					"links": [],
+					"name": "value",
+					"value": {
+						"__type__": "float",
+						"__value__": 0.0
+					}
+				}
+			],
+			"type": "engine::animation::graph::FloatControlParameterNode"
+		}
+	]
+}
