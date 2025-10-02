@@ -1,0 +1,253 @@
+{
+	"__type__": "engine::render::Material::Snapshot",
+	"base": "",
+	"effect": "/plugins/starter_pack/system/shaders/materials/base/base_surface.fx",
+	"properties": [
+		{
+			"name": "g_vertAnimParams",
+			"value": {
+				"__type__": "math::vec4",
+				"w": 1.0,
+				"x": 0.0,
+				"y": 10.0,
+				"z": 1.0
+			}
+		},
+		{
+			"name": "g_detailRejectTiling",
+			"value": {
+				"__type__": "math::vec4",
+				"w": 4.0,
+				"x": 1.0,
+				"y": 1.0,
+				"z": 4.0
+			}
+		},
+		{
+			"name": "g_detailInfluences",
+			"value": {
+				"__type__": "math::vec4",
+				"w": 1.0,
+				"x": 1.0,
+				"y": 1.0,
+				"z": 1.0
+			}
+		},
+		{
+			"name": "g_repaintUniformity",
+			"value": {
+				"__type__": "float",
+				"__value__": 0.0
+			}
+		},
+		{
+			"name": "g_repaintColorRoughness",
+			"value": {
+				"__type__": "math::vec4",
+				"w": 0.3160000145435333,
+				"x": 0.17901235818862915,
+				"y": 0.1790105700492859,
+				"z": 0.1790105700492859
+			}
+		},
+		{
+			"name": "g_baseColorRoughness",
+			"value": {
+				"__type__": "math::vec4",
+				"w": 0.38999998569488525,
+				"x": 0.16988414525985718,
+				"y": 0.16988244652748108,
+				"z": 0.16988244652748108
+			}
+		},
+		{
+			"name": "g_softAnimParams0",
+			"value": {
+				"__type__": "math::vec4",
+				"w": 1.0,
+				"x": 0.019999999552965164,
+				"y": 0.0,
+				"z": 0.0
+			}
+		},
+		{
+			"name": "g_animParams",
+			"value": {
+				"__type__": "math::vec2",
+				"x": 1.0,
+				"y": 59.0
+			}
+		},
+		{
+			"name": "g_destroyTime",
+			"value": {
+				"__type__": "float",
+				"__value__": 0.0
+			}
+		},
+		{
+			"name": "g_shaderControls",
+			"value": {
+				"__type__": "math::vec4",
+				"w": 0.0,
+				"x": 0.0,
+				"y": 0.0,
+				"z": 0.0
+			}
+		},
+		{
+			"name": "g_uvManipParams",
+			"value": {
+				"__type__": "math::vec4",
+				"w": 0.0,
+				"x": 1.0,
+				"y": 1.0,
+				"z": 0.0
+			}
+		},
+		{
+			"name": "g_emissiveColor",
+			"value": {
+				"__type__": "math::vec4",
+				"w": 0.0,
+				"x": 0.0,
+				"y": 0.0,
+				"z": 0.0
+			}
+		},
+		{
+			"name": "g_layoutParams",
+			"value": {
+				"__type__": "math::vec4",
+				"w": 0.0,
+				"x": 1.0,
+				"y": 0.0,
+				"z": 0.0
+			}
+		},
+		{
+			"name": "g_disableVoxelizationGI",
+			"value": {
+				"__type__": "bool",
+				"__value__": false
+			}
+		},
+		{
+			"name": "g_terrainBlendingDisableNormal",
+			"value": {
+				"__type__": "bool",
+				"__value__": false
+			}
+		},
+		{
+			"name": "g_terrainBlendingCavityMode",
+			"value": {
+				"__type__": "bool",
+				"__value__": false
+			}
+		},
+		{
+			"name": "g_terrainBlendingDistance",
+			"value": {
+				"__type__": "float",
+				"__value__": 1.0
+			}
+		},
+		{
+			"name": "g_alphaTestReference",
+			"value": {
+				"__type__": "float",
+				"__value__": 0.0
+			}
+		},
+		{
+			"name": "g_localWireframeMode",
+			"value": {
+				"__type__": "bool",
+				"__value__": false
+			}
+		},
+		{
+			"name": "g_objectKind",
+			"value": {
+				"__type__": "int32",
+				"__value__": 0
+			}
+		},
+		{
+			"name": "g_enableAlphaTest",
+			"value": {
+				"__type__": "bool",
+				"__value__": false
+			}
+		},
+		{
+			"name": "g_doubleSided",
+			"value": {
+				"__type__": "bool",
+				"__value__": false
+			}
+		},
+		{
+			"name": "g_vertexMode",
+			"value": {
+				"__type__": "int32",
+				"__value__": 0
+			}
+		},
+		{
+			"name": "g_pixelMode",
+			"value": {
+				"__type__": "int32",
+				"__value__": 0
+			}
+		}
+	],
+	"textures": [
+		{
+			"name": "g_albedo",
+			"texture": "/effects/vehicles/movement/hardpoints/direction/matkinds/base/textures/mud_01_albedo.tif"
+		},
+		{
+			"name": "g_normalMap",
+			"texture": "/effects/vehicles/shots/noise_nm.tif"
+		},
+		{
+			"name": "g_aomr",
+			"texture": "/effects/vehicles/movement/hardpoints/direction/matkinds/base/textures/mud_01_aomr.tif"
+		},
+		{
+			"name": "g_rta",
+			"texture": "/effects/vehicles/movement/hardpoints/direction/matkinds/base/textures/mud_01_rta.tif"
+		},
+		{
+			"name": "g_emissive",
+			"texture": ""
+		},
+		{
+			"name": "g_posMap",
+			"texture": ""
+		},
+		{
+			"name": "g_rotMap",
+			"texture": ""
+		},
+		{
+			"name": "g_pivMap",
+			"texture": ""
+		},
+		{
+			"name": "g_softAnimPosMap",
+			"texture": ""
+		},
+		{
+			"name": "g_softAnimRotMap",
+			"texture": ""
+		},
+		{
+			"name": "g_detailMap",
+			"texture": ""
+		}
+	],
+	"version": 6
+}

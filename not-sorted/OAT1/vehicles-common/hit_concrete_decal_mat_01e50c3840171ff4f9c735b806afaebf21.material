@@ -1,0 +1,64 @@
+{
+	"__type__": "engine::render::Material::Snapshot",
+	"base": "",
+	"effect": "/system/shaders/deferred/decal.fx",
+	"properties": [
+		{
+			"name": "g_emissiveColor",
+			"value": {
+				"__type__": "math::vec4",
+				"w": 100.0,
+				"x": 1.0,
+				"y": 0.023166000843048096,
+				"z": 0.0
+			}
+		},
+		{
+			"name": "g_disableNormalFade",
+			"value": {
+				"__type__": "bool",
+				"__value__": false
+			}
+		},
+		{
+			"name": "g_mode",
+			"value": {
+				"__type__": "int32",
+				"__value__": 0
+			}
+		},
+		{
+			"name": "g_enableEmissive",
+			"value": {
+				"__type__": "bool",
+				"__value__": false
+			}
+		},
+		{
+			"name": "g_separatedShadingBlend",
+			"value": {
+				"__type__": "bool",
+				"__value__": false
+			}
+		}
+	],
+	"textures": [
+		{
+			"name": "g_albedoMap",
+			"texture": "/effects/vehicles/hits/_[concrete]/decals/textures/concrete_hit_01.png"
+		},
+		{
+			"name": "g_normalMap",
+			"texture": "/effects/vehicles/hits/_[concrete]/decals/textures/concrete_hit_nm_01.png"
+		},
+		{
+			"name": "g_emissiveMap",
+			"texture": ""
+		},
+		{
+			"name": "g_shadingMap",
+			"texture": "/effects/vehicles/hits/_[concrete]/decals/textures/concrete_hit_shm_01.png"
+		}
+	],
+	"version": 6
+}

@@ -1,0 +1,134 @@
+{
+	"__type__": "engine::render::Material::Snapshot",
+	"base": "",
+	"effect": "/shaders/materials/fx_mesh.fx",
+	"properties": [
+		{
+			"name": "g_shInfluence",
+			"value": {
+				"__type__": "float",
+				"__value__": 0.0
+			}
+		},
+		{
+			"name": "g_cameraFade",
+			"value": {
+				"__type__": "math::vec2",
+				"x": 0.0010000000474974513,
+				"y": 0.009999999776482582
+			}
+		},
+		{
+			"name": "g_smokeParams",
+			"value": {
+				"__type__": "math::vec2",
+				"x": 0.0,
+				"y": 0.0
+			}
+		},
+		{
+			"name": "g_motionParams",
+			"value": {
+				"__type__": "math::vec4",
+				"w": 0.0,
+				"x": -0.550000011920929,
+				"y": 0.6000000238418579,
+				"z": 0.0
+			}
+		},
+		{
+			"name": "g_flickeringParams",
+			"value": {
+				"__type__": "math::vec4",
+				"w": 0.5799999833106995,
+				"x": 0.0,
+				"y": 0.009999999776482582,
+				"z": 0.10999999940395355
+			}
+		},
+		{
+			"name": "g_flameParams",
+			"value": {
+				"__type__": "math::vec2",
+				"x": 0.11999999731779099,
+				"y": 1.0
+			}
+		},
+		{
+			"name": "g_angleFalloff",
+			"value": {
+				"__type__": "math::vec4",
+				"w": 0.0,
+				"x": 5.010000228881836,
+				"y": 0.0,
+				"z": 0.0
+			}
+		},
+		{
+			"name": "g_angleFalloffEnable",
+			"value": {
+				"__type__": "bool",
+				"__value__": false
+			}
+		},
+		{
+			"name": "g_localWireframeMode",
+			"value": {
+				"__type__": "bool",
+				"__value__": false
+			}
+		},
+		{
+			"name": "g_objectKind",
+			"value": {
+				"__type__": "int32",
+				"__value__": 0
+			}
+		},
+		{
+			"name": "g_doubleSided",
+			"value": {
+				"__type__": "bool",
+				"__value__": false
+			}
+		},
+		{
+			"name": "g_prototyping",
+			"value": {
+				"__type__": "bool",
+				"__value__": false
+			}
+		}
+	],
+	"textures": [
+		{
+			"name": "g_diffuse",
+			"texture": ""
+		},
+		{
+			"name": "g_gradientMap",
+			"texture": "/effects/_texturespfx/lut/white_map.png"
+		},
+		{
+			"name": "g_motionVectorMap",
+			"texture": "/content/experimental_models/pbs_motion_gradient/ssmoketile_mv.tga"
+		},
+		{
+			"name": "g_harmonicsMap",
+			"texture": "/effects/_texturesgfx/fs_light_mesh_sh.png"
+		},
+		{
+			"name": "g_noiseMap",
+			"texture": "/effects/events/abilities/ability_helicopter/noise_01.png"
+		},
+		{
+			"name": "g_lutSmoke",
+			"texture": "/effects/_texturespfx/lut/smoke_dark_07_color_mt.png"
+		},
+		{
+			"name": "g_lutEmissive",
+			"texture": "/effects/_texturespfx/temperatures/blackbody_temperature_r01.png"
+		}
+	],
+	"version": 6
+}

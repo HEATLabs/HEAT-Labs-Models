@@ -1,0 +1,114 @@
+{
+	"__type__": "engine::render::Material::Snapshot",
+	"base": "",
+	"effect": "/shaders/materials/tank_internal_part_box.fx",
+	"properties": [
+		{
+			"name": "g_terrainBlendingDistance",
+			"value": {
+				"__type__": "float",
+				"__value__": 1.0
+			}
+		},
+		{
+			"name": "g_terrainBlendingCavityMode",
+			"value": {
+				"__type__": "bool",
+				"__value__": false
+			}
+		},
+		{
+			"name": "g_terrainBlendingDisableNormal",
+			"value": {
+				"__type__": "bool",
+				"__value__": false
+			}
+		},
+		{
+			"name": "g_disableVoxelizationGI",
+			"value": {
+				"__type__": "bool",
+				"__value__": false
+			}
+		},
+		{
+			"name": "g_alphaTestReference",
+			"value": {
+				"__type__": "float",
+				"__value__": 0.04919999837875366
+			}
+		},
+		{
+			"name": "g_emissiveColor",
+			"value": {
+				"__type__": "math::vec4",
+				"w": 0.0,
+				"x": 1.0,
+				"y": 0.0,
+				"z": 0.0
+			}
+		},
+		{
+			"name": "g_enableEmissive",
+			"value": {
+				"__type__": "bool",
+				"__value__": false
+			}
+		},
+		{
+			"name": "g_localWireframeMode",
+			"value": {
+				"__type__": "bool",
+				"__value__": false
+			}
+		},
+		{
+			"name": "g_objectKind",
+			"value": {
+				"__type__": "int32",
+				"__value__": 0
+			}
+		},
+		{
+			"name": "g_enableAlphaTest",
+			"value": {
+				"__type__": "bool",
+				"__value__": false
+			}
+		},
+		{
+			"name": "g_doubleSided",
+			"value": {
+				"__type__": "bool",
+				"__value__": false
+			}
+		}
+	],
+	"textures": [
+		{
+			"name": "g_albedoMap",
+			"texture": "/effects/vehicles/camp/internal_modules/pool/in_techno-color.png"
+		},
+		{
+			"name": "g_normalMap",
+			"texture": "/effects/vehicles/camp/internal_modules/pool/in_techno-normal.png"
+		},
+		{
+			"name": "g_aoMap",
+			"texture": "/effects/vehicles/camp/internal_modules/pool/in_techno.png"
+		},
+		{
+			"name": "g_metalnessMap",
+			"texture": "/effects/vehicles/camp/internal_modules/pool/in_techno-color.png"
+		},
+		{
+			"name": "g_roughnessMap",
+			"texture": "/effects/vehicles/camp/internal_modules/pool/in_techno-color.png"
+		},
+		{
+			"name": "g_emissiveMap",
+			"texture": ""
+		}
+	],
+	"version": 6
+}

@@ -1,0 +1,214 @@
+{
+	"__type__": "engine::render::Material::Snapshot",
+	"base": "",
+	"effect": "/plugins/starter_pack/system/shaders/fx/fx_mesh_adv.fx",
+	"properties": [
+		{
+			"name": "g_tuning",
+			"value": {
+				"__type__": "math::vec4",
+				"w": 0.0,
+				"x": 1.0,
+				"y": 0.38999998569488525,
+				"z": 0.10000000149011612
+			}
+		},
+		{
+			"name": "g_cameraFade",
+			"value": {
+				"__type__": "math::vec4",
+				"w": 10.0,
+				"x": 0.10000000149011612,
+				"y": 1.0,
+				"z": 20.0
+			}
+		},
+		{
+			"name": "g_smokeParams",
+			"value": {
+				"__type__": "math::vec4",
+				"w": 0.3199999928474426,
+				"x": -0.05000000074505806,
+				"y": 0.2409999966621399,
+				"z": 0.03999999910593033
+			}
+		},
+		{
+			"name": "g_motionParams",
+			"value": {
+				"__type__": "math::vec4",
+				"w": 0.0,
+				"x": -0.10000000149011612,
+				"y": 0.20999999344348907,
+				"z": -0.6600000262260437
+			}
+		},
+		{
+			"name": "g_flickeringParams",
+			"value": {
+				"__type__": "math::vec4",
+				"w": 0.0,
+				"x": 0.0,
+				"y": 0.2800000011920929,
+				"z": 0.4300000071525574
+			}
+		},
+		{
+			"name": "g_angleFalloff",
+			"value": {
+				"__type__": "math::vec4",
+				"w": 1.0,
+				"x": 1.0,
+				"y": 0.7900000214576721,
+				"z": 0.46000000834465027
+			}
+		},
+		{
+			"name": "g_gradHarmTiling",
+			"value": {
+				"__type__": "math::vec4",
+				"w": 1.0,
+				"x": 0.30000001192092896,
+				"y": 2.0,
+				"z": 1.0
+			}
+		},
+		{
+			"name": "g_noiseMapTiling",
+			"value": {
+				"__type__": "math::vec4",
+				"w": 1.0,
+				"x": 1.0,
+				"y": 1.0,
+				"z": 1.0
+			}
+		},
+		{
+			"name": "g_noiseMapScrolling",
+			"value": {
+				"__type__": "math::vec4",
+				"w": 0.019999999552965164,
+				"x": 0.019999999552965164,
+				"y": -0.009999999776482582,
+				"z": 0.029999999329447746
+			}
+		},
+		{
+			"name": "g_motionVectorMapRGTiling",
+			"value": {
+				"__type__": "math::vec4",
+				"w": 0.15000000596046448,
+				"x": 1.0,
+				"y": 1.0,
+				"z": 0.41999998688697815
+			}
+		},
+		{
+			"name": "g_motionVectorMapRGScrolling",
+			"value": {
+				"__type__": "math::vec4",
+				"w": -0.009999999776482582,
+				"x": 0.029999999329447746,
+				"y": 0.009999999776482582,
+				"z": 0.05000000074505806
+			}
+		},
+		{
+			"name": "g_enableVertAnim",
+			"value": {
+				"__type__": "bool",
+				"__value__": false
+			}
+		},
+		{
+			"name": "g_windParams",
+			"value": {
+				"__type__": "math::vec4",
+				"w": 1.0,
+				"x": 0.6000000238418579,
+				"y": 0.800000011920929,
+				"z": 1.0
+			}
+		},
+		{
+			"name": "g_windParams2",
+			"value": {
+				"__type__": "math::vec4",
+				"w": 0.0,
+				"x": 1.0,
+				"y": 0.0,
+				"z": 0.0
+			}
+		},
+		{
+			"name": "g_angleFalloffEnable",
+			"value": {
+				"__type__": "bool",
+				"__value__": true
+			}
+		},
+		{
+			"name": "g_localWireframeMode",
+			"value": {
+				"__type__": "bool",
+				"__value__": false
+			}
+		},
+		{
+			"name": "g_objectKind",
+			"value": {
+				"__type__": "int32",
+				"__value__": 0
+			}
+		},
+		{
+			"name": "g_doubleSided",
+			"value": {
+				"__type__": "bool",
+				"__value__": true
+			}
+		},
+		{
+			"name": "g_prototyping",
+			"value": {
+				"__type__": "bool",
+				"__value__": false
+			}
+		}
+	],
+	"textures": [
+		{
+			"name": "g_diffuse",
+			"texture": "/effects/events/abilities/ability_helicopter/noise_04.png"
+		},
+		{
+			"name": "g_gradientMap",
+			"texture": "/effects/events/abilities/ability_helicopter/noise_04.png"
+		},
+		{
+			"name": "g_motionVectorMap",
+			"texture": "/effects/_texturespfx/forces/noise_01.png"
+		},
+		{
+			"name": "g_harmonicsMap",
+			"texture": "/effects/_texturesgfx/fs_light_mesh_sh.png"
+		},
+		{
+			"name": "g_noiseMap",
+			"texture": "/effects/events/abilities/ability_helicopter/noise_04.png"
+		},
+		{
+			"name": "g_lutSmoke",
+			"texture": "/effects/_texturespfx/lut/water_blue_1_color_mt.png"
+		},
+		{
+			"name": "g_lutEmissive",
+			"texture": "/effects/_texturespfx/temperatures/blackbody_temperature_r01.png"
+		},
+		{
+			"name": "g_vertAnimMask",
+			"texture": ""
+		}
+	],
+	"version": 6
+}

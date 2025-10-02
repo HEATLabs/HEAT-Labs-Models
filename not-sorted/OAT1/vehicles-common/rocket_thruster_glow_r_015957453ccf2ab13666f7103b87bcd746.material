@@ -1,0 +1,57 @@
+{
+	"__type__": "engine::render::Material::Snapshot",
+	"base": "",
+	"effect": "/shaders/materials/sniper_lens.fx",
+	"properties": [
+		{
+			"name": "g_cameraFade",
+			"value": {
+				"__type__": "math::vec4",
+				"w": 50.0,
+				"x": 1.0,
+				"y": 0.10000000149011612,
+				"z": 50.0
+			}
+		},
+		{
+			"name": "g_materialParams",
+			"value": {
+				"__type__": "math::vec4",
+				"w": 1.0,
+				"x": 0.0,
+				"y": 100.0,
+				"z": 0.0
+			}
+		},
+		{
+			"name": "g_tintColor",
+			"value": {
+				"__type__": "math::vec3",
+				"x": 1.0,
+				"y": 0.0,
+				"z": 0.0
+			}
+		},
+		{
+			"name": "g_localWireframeMode",
+			"value": {
+				"__type__": "bool",
+				"__value__": false
+			}
+		},
+		{
+			"name": "g_objectKind",
+			"value": {
+				"__type__": "int32",
+				"__value__": 1
+			}
+		}
+	],
+	"textures": [
+		{
+			"name": "g_colorMap",
+			"texture": "/effects/_texturespfx/sphere_02_grad.png"
+		}
+	],
+	"version": 6
+}

@@ -1,0 +1,214 @@
+{
+	"__type__": "engine::render::Material::Snapshot",
+	"base": "",
+	"effect": "/plugins/starter_pack/system/shaders/fx/fx_mesh_adv.fx",
+	"properties": [
+		{
+			"name": "g_tuning",
+			"value": {
+				"__type__": "math::vec4",
+				"w": 0.1899999976158142,
+				"x": 0.0,
+				"y": 0.0,
+				"z": 1.0
+			}
+		},
+		{
+			"name": "g_cameraFade",
+			"value": {
+				"__type__": "math::vec4",
+				"w": 8.100000381469727,
+				"x": 0.699999988079071,
+				"y": 1.7000000476837158,
+				"z": 116.5
+			}
+		},
+		{
+			"name": "g_smokeParams",
+			"value": {
+				"__type__": "math::vec4",
+				"w": 1.0,
+				"x": 0.03999999910593033,
+				"y": 0.0,
+				"z": 0.10999999940395355
+			}
+		},
+		{
+			"name": "g_motionParams",
+			"value": {
+				"__type__": "math::vec4",
+				"w": 0.0,
+				"x": -0.009999999776482582,
+				"y": 0.0,
+				"z": -0.009999999776482582
+			}
+		},
+		{
+			"name": "g_flickeringParams",
+			"value": {
+				"__type__": "math::vec4",
+				"w": 0.0,
+				"x": 0.0,
+				"y": 0.009999999776482582,
+				"z": 1.0
+			}
+		},
+		{
+			"name": "g_angleFalloff",
+			"value": {
+				"__type__": "math::vec4",
+				"w": 1.0,
+				"x": 5.010000228881836,
+				"y": 0.0,
+				"z": 1.0
+			}
+		},
+		{
+			"name": "g_gradHarmTiling",
+			"value": {
+				"__type__": "math::vec4",
+				"w": 1.0,
+				"x": 0.3400000035762787,
+				"y": 0.3799999952316284,
+				"z": 1.0
+			}
+		},
+		{
+			"name": "g_noiseMapTiling",
+			"value": {
+				"__type__": "math::vec4",
+				"w": 1.0,
+				"x": 1.0,
+				"y": 1.0,
+				"z": 1.0
+			}
+		},
+		{
+			"name": "g_noiseMapScrolling",
+			"value": {
+				"__type__": "math::vec4",
+				"w": 0.0,
+				"x": 0.0,
+				"y": 0.0,
+				"z": 0.0
+			}
+		},
+		{
+			"name": "g_motionVectorMapRGTiling",
+			"value": {
+				"__type__": "math::vec4",
+				"w": 1.0,
+				"x": 1.0,
+				"y": 1.0,
+				"z": 1.0
+			}
+		},
+		{
+			"name": "g_motionVectorMapRGScrolling",
+			"value": {
+				"__type__": "math::vec4",
+				"w": 0.0,
+				"x": 0.0,
+				"y": 0.0,
+				"z": 0.0
+			}
+		},
+		{
+			"name": "g_enableVertAnim",
+			"value": {
+				"__type__": "bool",
+				"__value__": false
+			}
+		},
+		{
+			"name": "g_windParams",
+			"value": {
+				"__type__": "math::vec4",
+				"w": 1.0,
+				"x": 0.0,
+				"y": 2.0,
+				"z": 1.0
+			}
+		},
+		{
+			"name": "g_windParams2",
+			"value": {
+				"__type__": "math::vec4",
+				"w": 0.0,
+				"x": 1.0,
+				"y": 0.0,
+				"z": 0.0
+			}
+		},
+		{
+			"name": "g_angleFalloffEnable",
+			"value": {
+				"__type__": "bool",
+				"__value__": true
+			}
+		},
+		{
+			"name": "g_localWireframeMode",
+			"value": {
+				"__type__": "bool",
+				"__value__": false
+			}
+		},
+		{
+			"name": "g_objectKind",
+			"value": {
+				"__type__": "int32",
+				"__value__": 0
+			}
+		},
+		{
+			"name": "g_doubleSided",
+			"value": {
+				"__type__": "bool",
+				"__value__": true
+			}
+		},
+		{
+			"name": "g_prototyping",
+			"value": {
+				"__type__": "bool",
+				"__value__": false
+			}
+		}
+	],
+	"textures": [
+		{
+			"name": "g_diffuse",
+			"texture": ""
+		},
+		{
+			"name": "g_gradientMap",
+			"texture": "/effects/events/abilities/ability_helicopter/noise_01.png"
+		},
+		{
+			"name": "g_motionVectorMap",
+			"texture": "/content/experimental_models/pbs_motion_gradient/ssmoketile_mv.tga"
+		},
+		{
+			"name": "g_harmonicsMap",
+			"texture": "/effects/_texturesgfx/fs_light_mesh_sh.png"
+		},
+		{
+			"name": "g_noiseMap",
+			"texture": "/effects/events/abilities/ability_helicopter/noise_01.png"
+		},
+		{
+			"name": "g_lutSmoke",
+			"texture": "/effects/_texturespfx/lut/smoke_white_7_color_mt.png"
+		},
+		{
+			"name": "g_lutEmissive",
+			"texture": "/content/experimental_models/pbs_motion_gradient/blackbody.dds"
+		},
+		{
+			"name": "g_vertAnimMask",
+			"texture": ""
+		}
+	],
+	"version": 6
+}
