@@ -1,0 +1,110 @@
+{
+	"__type__": "engine::render::Material::Snapshot",
+	"base": "",
+	"effect": "/shaders/materials/tank_base_mat.fx",
+	"properties": [
+		{
+			"name": "g_dirtTiling",
+			"value": {
+				"__type__": "float",
+				"__value__": 1.0
+			}
+		},
+		{
+			"name": "g_useTiledCrash",
+			"value": {
+				"__type__": "bool",
+				"__value__": true
+			}
+		},
+		{
+			"name": "g_enableEmissive",
+			"value": {
+				"__type__": "bool",
+				"__value__": false
+			}
+		},
+		{
+			"name": "g_emissiveColor",
+			"value": {
+				"__type__": "math::vec4",
+				"w": 0.0,
+				"x": 0.0,
+				"y": 0.0,
+				"z": 0.0
+			}
+		},
+		{
+			"name": "g_crashUVTiling",
+			"value": {
+				"__type__": "math::vec4",
+				"w": 0.0,
+				"x": 0.5,
+				"y": 0.25,
+				"z": 0.0
+			}
+		},
+		{
+			"name": "g_alphaTestReference",
+			"value": {
+				"__type__": "float",
+				"__value__": 0.05000000074505806
+			}
+		},
+		{
+			"name": "g_doubleSided",
+			"value": {
+				"__type__": "bool",
+				"__value__": false
+			}
+		},
+		{
+			"name": "g_enableAlphaTest",
+			"value": {
+				"__type__": "bool",
+				"__value__": false
+			}
+		},
+		{
+			"name": "g_objectKind",
+			"value": {
+				"__type__": "int32",
+				"__value__": 1
+			}
+		},
+		{
+			"name": "g_localWireframeMode",
+			"value": {
+				"__type__": "bool",
+				"__value__": false
+			}
+		}
+	],
+	"textures": [
+		{
+			"name": "g_crash",
+			"texture": "/vehicles/universal_parts/crash_tile/textures/crash_tile.png"
+		},
+		{
+			"name": "g_albedo",
+			"texture": "/vehicles/german/g01_leopard_1_0_ser/support_fbx/materials/textures/radiostation_db39_am.png"
+		},
+		{
+			"name": "g_normal",
+			"texture": "/vehicles/german/g01_leopard_1_0_ser/support_fbx/materials/textures/radiostation_db39_nm.png"
+		},
+		{
+			"name": "g_mr",
+			"texture": "/vehicles/german/g01_leopard_1_0_ser/support_fbx/materials/textures/radiostation_db39_rmm.png"
+		},
+		{
+			"name": "g_ao",
+			"texture": "/vehicles/german/g01_leopard_1_0_ser/support_fbx/materials/textures/radiostation_db39_ao.png"
+		},
+		{
+			"name": "g_mask",
+			"texture": "/vehicles/german/g01_leopard_1_0_ser/support_fbx/materials/textures/radiostation_db39_mask.png"
+		}
+	],
+	"version": 6
+}
