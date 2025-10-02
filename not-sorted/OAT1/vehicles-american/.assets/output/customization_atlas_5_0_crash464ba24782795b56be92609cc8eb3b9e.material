@@ -1,0 +1,185 @@
+{
+	"__type__": "engine::render::Material::Snapshot",
+	"base": "",
+	"effect": "/shaders/materials/tank_base_mat.fx",
+	"properties": [
+		{
+			"name": "g_alphaTestReference",
+			"value": {
+				"__type__": "float",
+				"__value__": 0.5
+			}
+		},
+		{
+			"name": "g_baseColorRoughness",
+			"value": {
+				"__type__": "math::vec4",
+				"w": 1.0,
+				"x": 0.5,
+				"y": 0.5,
+				"z": 0.5
+			}
+		},
+		{
+			"name": "g_repaintColorRoughness",
+			"value": {
+				"__type__": "math::vec4",
+				"w": 1.0,
+				"x": 0.5,
+				"y": 0.5,
+				"z": 0.5
+			}
+		},
+		{
+			"name": "g_repaintUniformity",
+			"value": {
+				"__type__": "float",
+				"__value__": 0.0
+			}
+		},
+		{
+			"name": "g_detailInfluences",
+			"value": {
+				"__type__": "math::vec4",
+				"w": 1.0,
+				"x": 1.0,
+				"y": 1.0,
+				"z": 1.0
+			}
+		},
+		{
+			"name": "g_detailRejectTiling",
+			"value": {
+				"__type__": "math::vec4",
+				"w": 4.0,
+				"x": 1.0,
+				"y": 1.0,
+				"z": 4.0
+			}
+		},
+		{
+			"name": "g_crashUVTiling",
+			"value": {
+				"__type__": "math::vec4",
+				"w": 0.0,
+				"x": 4.0,
+				"y": 2.0,
+				"z": 0.0
+			}
+		},
+		{
+			"name": "g_rColor",
+			"value": {
+				"__type__": "math::vec4",
+				"w": 0.8500000238418579,
+				"x": 0.3720000088214874,
+				"y": 0.41499999165534973,
+				"z": 0.4399999976158142
+			}
+		},
+		{
+			"name": "g_direction",
+			"value": {
+				"__type__": "float",
+				"__value__": 0.0
+			}
+		},
+		{
+			"name": "g_minT",
+			"value": {
+				"__type__": "float",
+				"__value__": 0.5
+			}
+		},
+		{
+			"name": "g_xrayValue",
+			"value": {
+				"__type__": "float",
+				"__value__": 0.0
+			}
+		},
+		{
+			"name": "g_localWireframeMode",
+			"value": {
+				"__type__": "bool",
+				"__value__": false
+			}
+		},
+		{
+			"name": "g_objectKind",
+			"value": {
+				"__type__": "int32",
+				"__value__": 1
+			}
+		},
+		{
+			"name": "g_enableAlphaTest",
+			"value": {
+				"__type__": "bool",
+				"__value__": true
+			}
+		},
+		{
+			"name": "g_doubleSided",
+			"value": {
+				"__type__": "bool",
+				"__value__": false
+			}
+		},
+		{
+			"name": "g_useRepaint",
+			"value": {
+				"__type__": "bool",
+				"__value__": false
+			}
+		},
+		{
+			"name": "g_useDetail",
+			"value": {
+				"__type__": "bool",
+				"__value__": false
+			}
+		},
+		{
+			"name": "g_useTiledCrash",
+			"value": {
+				"__type__": "bool",
+				"__value__": true
+			}
+		},
+		{
+			"name": "g_useXray",
+			"value": {
+				"__type__": "bool",
+				"__value__": false
+			}
+		}
+	],
+	"textures": [
+		{
+			"name": "g_albedo",
+			"texture": "/vehicles/american/a02_m1_1980/_skins/biker/materials/textures/customization_atlas_slot_5_0_am.png"
+		},
+		{
+			"name": "g_normal",
+			"texture": "/vehicles/american/a02_m1_1980/_skins/biker/materials/textures/customization_atlas_slot_5_0_nm.png"
+		},
+		{
+			"name": "g_mr",
+			"texture": "/vehicles/american/a02_m1_1980/_skins/biker/materials/textures/customization_atlas_slot_5_0_rmm.png"
+		},
+		{
+			"name": "g_ao",
+			"texture": "/vehicles/american/a02_m1_1980/_skins/biker/materials/textures/customization_atlas_slot_5_0_ao.png"
+		},
+		{
+			"name": "g_detail",
+			"texture": "/content/01_tiles/universaltextures/g_detail.tif"
+		},
+		{
+			"name": "g_crash",
+			"texture": "/vehicles/universal_parts/crash_tile/textures/crash_tile.png"
+		}
+	],
+	"version": 6
+}

@@ -1,0 +1,55 @@
+{
+	"__type__": "egnine::animation::GraphDefinition::SerializedRepresentation",
+	"control_parameters": [
+		{
+			"name": "speed",
+			"node": 1
+		}
+	],
+	"nodes": [
+		{
+			"properties": [
+				{
+					"links": [
+						{
+							"property_path": "",
+							"source_node": 1
+						}
+					],
+					"name": "speed",
+					"value": null
+				},
+				{
+					"links": [],
+					"name": "sample_options",
+					"value": {
+						"__type__": "engine::animation::graph::AnimationClipSampleOptions",
+						"__value__": "All"
+					}
+				},
+				{
+					"links": [],
+					"name": "clip",
+					"value": {
+						"__type__": "ResPtr_engine::io::SkeletalAnimationResourceManager",
+						"__value__": "/vehicles/american/a02_m1_1980/atr_eds_railgun_fbx/meshes/custom_animation/fans/anim/turret_fans_anim_fbx/animations/turret_fans_anim.anim"
+					}
+				}
+			],
+			"type": "engine::animation::graph::AnimationLoopNode"
+		},
+		{
+			"properties": [
+				{
+					"links": [],
+					"name": "value",
+					"value": {
+						"__type__": "float",
+						"__value__": 1.5
+					}
+				}
+			],
+			"type": "engine::animation::graph::FloatControlParameterNode"
+		}
+	]
+}
