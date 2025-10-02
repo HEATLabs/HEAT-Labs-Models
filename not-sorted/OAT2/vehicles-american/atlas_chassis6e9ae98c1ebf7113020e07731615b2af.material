@@ -1,0 +1,1 @@
+{"__type__":"engine::render::Material::Snapshot","base":"/vehicles/american/a02_m1e1_120/_skins/a02_m1e1_120_default_style_fbx/materials/atlas_chassis.material","effect":"","properties":[],"textures":[{"name":"g_albedo","texture":"/vehicles/american/a02_m1e1_120/_skins/a02_m1e1_120_default_style_v2/materials/textures/atlas_chassis_am_v2.png"}],"version":7}

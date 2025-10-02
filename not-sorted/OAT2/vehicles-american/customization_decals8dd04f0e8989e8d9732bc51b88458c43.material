@@ -1,0 +1,1 @@
+{"__type__":"engine::render::Material::Snapshot","base":"/vehicles/american/a02_m1e1_120/_skins/a02_m1e1_120_default_style_fbx/materials/customization_decals.material","effect":"","properties":[],"textures":[{"name":"g_albedoMap","texture":"/vehicles/american/a02_m1e1_120/_skins/a02_m1e1_120_default_style_v4/materials/textures/decals_01_v4.png"}],"version":7}

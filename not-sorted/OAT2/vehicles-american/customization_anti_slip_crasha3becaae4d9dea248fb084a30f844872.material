@@ -1,0 +1,1 @@
+{"__type__":"engine::render::Material::Snapshot","base":"/vehicles/american/a02_m1e1_120/_skins/a02_m1e1_120_default_style_fbx/materials/customization_anti_slip_crash.material","effect":"","properties":[],"textures":[{"name":"g_albedo","texture":"/vehicles/american/a02_m1e1_120/_skins/a02_m1e1_120_default_style_v2/materials/textures/anti_slip_base_am_v2.png"}],"version":7}
