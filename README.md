@@ -1,6 +1,6 @@
 <div align="center">
 
-# HEAT Labs - Tank Models
+# HEAT Labs - Models
 
 <img src="https://raw.githubusercontent.com/HEATLabs/HEAT-Labs-Images/refs/heads/main/social-share/HEATLabs.png" alt="HEAT Labs Banner"/>
 
